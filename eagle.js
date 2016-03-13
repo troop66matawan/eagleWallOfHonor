@@ -21,6 +21,7 @@ function createEagleRow(eagle) {
   var nameTextNode = document.createTextNode(eagle.firstName + " " + eagle.lastName);
   if (eagle.url != null) {
       var linkNode = document.createElement("a");
+      linkNode.setAttribute("target", "_parent");
       linkNode.setAttribute("href", eagle.url);
       linkNode.appendChild(nameTextNode);
       nameElement.appendChild(linkNode);
