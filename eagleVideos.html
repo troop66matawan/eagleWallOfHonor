@@ -1,0 +1,256 @@
+<html>
+<head>
+</head>
+<body>
+<style media="screen" type="text/css">
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+  margin: 20px;
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+#content {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+.container {
+  padding-left: 10px;
+
+}
+.column {
+	width: 330px;
+	padding: 0px 15px;
+	float: left;
+}
+
+.row {
+  width: 330px;
+  height: 220px;
+  float:left;
+
+}
+
+.number {
+  width: 40px;
+  float: left;
+}
+
+.name {
+  width: 190px;
+  float: left;
+}
+
+.date {
+  width: 75px;
+  float: right;
+}
+.image {
+  width: 320px;
+  height: 180px;
+}
+.thumb-image   {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.play-overlay{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 1px #ccc;
+}
+</style>
+<div id="container" class="container"></div>
+  <script src="..\EagleWallOfHonor\eagle.json" type="text/javascript"></script>
+  <script  type="text/javascript">
+
+
+function createEagleRow(eagle) {
+  var node = null;
+  if (eagle.youtube != null) {
+    node = document.createElement("div");
+    node.setAttribute("class","row");
+    node.setAttribute("id", eagle.id);
+
+
+    var nameElement = document.createElement("div");
+    nameElement.setAttribute("class", "name");
+    var nameTextNode = document.createTextNode(eagle.firstName + " " + eagle.lastName);
+    nameElement.appendChild(nameTextNode);
+    node.appendChild(nameElement);
+
+    var dateElement = document.createElement("div");
+    dateElement.setAttribute("class", "date");
+    var dateTextNode = document.createTextNode(eagle.date);
+    dateElement.appendChild(dateTextNode);
+    node.appendChild(dateElement);
+
+    var ytElem = document.createElement("div");
+    ytElem.setAttribute("class", "image");
+    ytElem.setAttribute("id", "image"+eagle.id);
+    ytElem.setAttribute("style", "position: relative;top: 0");
+    var ytLink = document.createElement("a");
+    ytLink.setAttribute("href", eagle.url);
+    ytLink.setAttribute("target", "_parent");
+    var ytThumb = document.createElement("img");
+    var ytThumbLink = "http://img.youtube.com/vi/" + eagle.youtube + "/mqdefault.jpg";
+    ytThumb.setAttribute("class", "thumb-image");
+    ytThumb.setAttribute("src", ytThumbLink);
+    ytLink.appendChild(ytThumb);
+    ytElem.appendChild(ytLink);
+    var playButton = document.createElement("img");
+    playButton.setAttribute("class", "play-overlay");
+    playButton.setAttribute("src", "http://www.troop66matawan.com/1458097992_YouTube.png");
+    ytElem.appendChild(playButton);
+    node.appendChild(ytElem);
+
+  }
+
+  return node;
+}
+
+function insertEagles(numCols){
+  var eagleList = eagles.data;
+  var numEagles = eagleList.length;
+
+  var container = document.getElementById("container");
+  var start=1;
+  eagleList.forEach(function(item){
+    var rowNode = createEagleRow(item);
+    start++;
+    if (rowNode != null)
+      container.appendChild(rowNode);
+  });
+}
+
+function clearContainer() {
+  var root = document.getElementById("container");
+  while (root.firstChild) {
+    root.removeChild(root.firstChild);
+  }
+}
+
+function clearAndRedraw() {
+    clearContainer();
+    insertEagles();
+}
+
+
+function doInitialSetup() {
+  clearContainer();
+  insertEagles();
+}
+
+doInitialSetup();
+</script>
+
+</body>
+</html>
