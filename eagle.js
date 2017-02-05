@@ -29,7 +29,12 @@ function createEagleRow(eagle) {
     nameElement.appendChild(nameTextNode);
   }
   if (eagle.palms != null) {
-    var silverPalms = Math.trunc(eagle.palms/3);
+    var silverPalms = 0;
+    if(eagle.palms/3 > 0) {
+      silverPalms = Math.floor(eagle.palms/3);
+    } else {
+      silverPalms = Math.ceil(eagle.palms/3);
+    }
     var rem = eagle.palms % 3;
     for (var i = 0; i < silverPalms; i++){
       addPalm(nameElement,"#c0c0c0");
