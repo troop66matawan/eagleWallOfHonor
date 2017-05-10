@@ -142,5 +142,6 @@ var eagles = {
     { id : "140" , firstName : "Andy", lastName : "Grassia", date : "8/2016",  url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/andy-grassia", youtube: "tU5dvSv_Nm0", palms : "2" },
     { id : "141" , firstName : "John", lastName : "Giordano", date : "9/2016", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/john-giordano", youtube: "UEmDTQt0Ge8"},
     { id : "142" , firstName : "Robert", lastName : "Landi", date : "12/2016", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/robert-landi", youtube: "OaEHDX7Cp2Q", palms: "1"},
+    { id : "143" , firstName : "Colin", lastName : "Clark", date : "4/2017"},
   ]
 };
