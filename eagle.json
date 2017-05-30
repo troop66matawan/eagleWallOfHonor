@@ -136,7 +136,7 @@ var eagles = {
     { id : "134" , firstName : "Patrick", lastName : "Cucurullo" , date : "1/2016", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/patrick-cucurullo", youtube: "SzoRXLaIQ0w" },
     { id : "135" , firstName : "David", lastName : "Fleissner" , date : "1/2016", url :"http://www.troop66matawan.com/our-scouts-achievements/eagles/david-fleissner",  youtube: "clNsen1kx-4" },
     { id : "136" , firstName : "Stephen", lastName : "O'Keefe" , date : "3/2016", url :"http://www.troop66matawan.com/our-scouts-achievements/eagles/stephen-o-keefe",  youtube: "PtLk65AiZ_Q" },
-    { id : "137" , firstName : "Ryan", lastName : "Goldstein" , date : "5/2016",url :"http://www.troop66matawan.com/our-scouts-achievements/eagles/ryan-goldstein", youtube: "Oft_xCPr6UI", palms : "2"},
+    { id : "137" , firstName : "Ryan", lastName : "Goldstein" , date : "5/2016",url :"http://www.troop66matawan.com/our-scouts-achievements/eagles/ryan-goldstein", youtube: "Oft_xCPr6UI", palms : "3"},
     { id : "138" , firstName : "Evan", lastName : "Sieczkowski" , date : "5/2016"},
     { id : "139" , firstName : "Devon", lastName : "Doherty", date : "6/2016"},
     { id : "140" , firstName : "Andy", lastName : "Grassia", date : "8/2016",  url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/andy-grassia", youtube: "tU5dvSv_Nm0", palms : "2" },
