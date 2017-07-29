@@ -137,11 +137,12 @@ var eagles = {
     { id : "135" , firstName : "David", lastName : "Fleissner" , date : "1/2016", url :"http://www.troop66matawan.com/our-scouts-achievements/eagles/david-fleissner",  youtube: "clNsen1kx-4" },
     { id : "136" , firstName : "Stephen", lastName : "O'Keefe" , date : "3/2016", url :"http://www.troop66matawan.com/our-scouts-achievements/eagles/stephen-o-keefe",  youtube: "PtLk65AiZ_Q" },
     { id : "137" , firstName : "Ryan", lastName : "Goldstein" , date : "5/2016",url :"http://www.troop66matawan.com/our-scouts-achievements/eagles/ryan-goldstein", youtube: "Oft_xCPr6UI", palms : "3"},
-    { id : "138" , firstName : "Evan", lastName : "Sieczkowski" , date : "5/2016"},
+    { id : "138" , firstName : "Evan", lastName : "Sieczkowski" , date : "5/2016", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/evan-sieczkowski", youtube: "sg8Vhsivs1c"},
     { id : "139" , firstName : "Devon", lastName : "Doherty", date : "6/2016"},
     { id : "140" , firstName : "Andy", lastName : "Grassia", date : "8/2016",  url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/andy-grassia", youtube: "tU5dvSv_Nm0", palms : "2" },
     { id : "141" , firstName : "John", lastName : "Giordano", date : "9/2016", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/john-giordano", youtube: "UEmDTQt0Ge8"},
-    { id : "142" , firstName : "Robert", lastName : "Landi", date : "12/2016", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/robert-landi", youtube: "OaEHDX7Cp2Q", palms: "1"},
-    { id : "143" , firstName : "Colin", lastName : "Clark", date : "4/2017"},
+    { id : "142" , firstName : "Robert", lastName : "Landi", date : "12/2016", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/robert-landi", youtube: "OaEHDX7Cp2Q", palms: "2"},
+    { id : "143" , firstName : "Colin", lastName : "Clark", date : "4/2017", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/colin-clark", youtube: "WMQZyYqkltA"},
+    { id : "144" , firstName : "Brandon", lastName : "Leventhal", date : "7/2017"},
   ]
-};
+}
