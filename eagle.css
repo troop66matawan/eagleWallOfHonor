@@ -5,6 +5,15 @@ body {
   color: #666;
   margin: 20px;
 }
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
 
 /* STRUCTURE */
 

@@ -1,6 +1,6 @@
-function addPalm(name, colorAttr){
+function addPalm(name, colorAttr, classAttr){
   var palmElement = document.createElement("i");
-  palmElement.setAttribute("class", "fa fa-leaf");
+  palmElement.setAttribute("class", classAttr);
   palmElement.setAttribute("style", "color:"+colorAttr);
   name.appendChild(palmElement);
 }
@@ -29,22 +29,32 @@ function createEagleRow(eagle) {
     nameElement.appendChild(nameTextNode);
   }
   if (eagle.palms != null) {
-    var silverPalms = 0;
-    if(eagle.palms/3 > 0) {
-      silverPalms = Math.floor(eagle.palms/3);
-    } else {
-      silverPalms = Math.ceil(eagle.palms/3);
-    }
+	var classAttr = "fa fa-leaf";
+    var silverPalms = Math.floor(eagle.palms/3);
     var rem = eagle.palms % 3;
     for (var i = 0; i < silverPalms; i++){
-      addPalm(nameElement,"#c0c0c0");
+      addPalm(nameElement,"#c0c0c0", classAttr);
     }
     if (rem == 1) {
-      addPalm(nameElement,"#665d1e");
+      addPalm(nameElement,"#665d1e", classAttr);
     } else if (rem == 2){
-      addPalm(nameElement, "#ffd700");
+      addPalm(nameElement, "#ffd700", classAttr);
     }
   }
+  if (eagle.borPalms != null) {
+	var classAttr = "fa fa-envira";
+    var silverPalms = Math.floor(eagle.borPalms/3);
+    var rem = eagle.borPalms % 3;
+    for (var i = 0; i < silverPalms; i++){
+      addPalm(nameElement,"#c0c0c0", classAttr);
+    }
+    if (rem == 1) {
+      addPalm(nameElement,"#665d1e", classAttr);
+    } else if (rem == 2){
+      addPalm(nameElement, "#ffd700", classAttr);
+    }
+  }
+  
   node.appendChild(nameElement);
 
   var dateElement = document.createElement("div");
@@ -55,8 +65,7 @@ function createEagleRow(eagle) {
 
   return node;
 }
-function resetContainerDimensions(numCols)
-{
+function resetContainerDimensions(numCols){
   var container = document.getElementById("container");
   var col1 = document.getElementById("col1");
   var height = col1.clientHeight;
