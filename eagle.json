@@ -148,7 +148,7 @@ var eagles = {
     { id : "146" , firstName : "Zachary", lastName : "Grillo" , date : "11/2017", borPalms: "2", url: "https://sites.google.com/a/troop66matawan.com/website/our-scouts-achievements/eagles/zachary-grillo", youtube: "jWJyuvgXFfQ"},
     { id : "147" , firstName : "Kyle", lastName : "Mulvey", date : "12/2017", borPalms: "3",  url: "https://sites.google.com/a/troop66matawan.com/website/our-scouts-achievements/eagles/kyle-mulvey", youtube: "xW8aZqU7m84"},
     { id : "148" , firstName : "Mahmoud", lastName : "Khair-Eldin", date : "12/2017"},
-    { id : "149" , firstName : "Stephen", lastName : "Ciupinski", date : "1/2018", borPalms: "2"},
+    { id : "149" , firstName : "Stephen", lastName : "Ciupinski", date : "1/2018", borPalms: "2",  url: "https://sites.google.com/a/troop66matawan.com/website/our-scouts-achievements/eagles/stephen-ciupinski", youtube: "Q54Bj256xG8"},
     { id : "150" , firstName : "Sean", lastName : "Scillia", date : "1/2018"},
     { id : "151" , firstName : "Chris", lastName : "Yin", date : "5/2018"},
     { id : "152" , firstName : "David", lastName : "Blaine", date : "5/2018"},
