@@ -144,7 +144,7 @@ var eagles = {
     { id : "142" , firstName : "Robert", lastName : "Landi", date : "12/2016", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/robert-landi", youtube: "OaEHDX7Cp2Q", palms: "2"},
     { id : "143" , firstName : "Colin", lastName : "Clark", date : "4/2017", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/colin-clark", youtube: "WMQZyYqkltA"},
     { id : "144" , firstName : "Brandon", lastName : "Leventhal", date : "7/2017", url: "http://www.troop66matawan.com/our-scouts-achievements/eagles/brandon-leventhal", youtube: "bjX5ejhSV3g"},
-    { id : "145" , firstName : "Bobby", lastName : "Kee" , date : "11/2017", borPalms: "2" },
+    { id : "145" , firstName : "Bobby", lastName : "Kee" , date : "11/2017", borPalms: "2" , url: "https://sites.google.com/a/troop66matawan.com/website/our-scouts-achievements/eagles/bobby-kee", youtube: "1KArU50p4_0"},
     { id : "146" , firstName : "Zachary", lastName : "Grillo" , date : "11/2017", borPalms: "2", url: "https://sites.google.com/a/troop66matawan.com/website/our-scouts-achievements/eagles/zachary-grillo", youtube: "jWJyuvgXFfQ"},
     { id : "147" , firstName : "Kyle", lastName : "Mulvey", date : "12/2017", borPalms: "3",  url: "https://sites.google.com/a/troop66matawan.com/website/our-scouts-achievements/eagles/kyle-mulvey", youtube: "xW8aZqU7m84"},
     { id : "148" , firstName : "Mahmoud", lastName : "Khair-Eldin", date : "12/2017"},
