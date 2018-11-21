@@ -153,6 +153,6 @@ var eagles = {
     { id : "151" , firstName : "Chris", lastName : "Yin", date : "5/2018"},
     { id : "152" , firstName : "David", lastName : "Blaine", date : "5/2018"},
     { id : "153" , firstName : "Jack", lastName : "Bland", date : "6/2018"},
-    { id : "154" , firstName : "Adam", lastName : "Goldstein", date : "9/2018"},]
+    { id : "154" , firstName : "Adam", lastName : "Goldstein", date : "9/2018"},
     { id : "155" , firstName : "Christopher", lastName : "McGackin", date : "10/2018"},]
 }
