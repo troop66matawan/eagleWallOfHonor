@@ -28,33 +28,56 @@ function createEagleRow(eagle) {
   } else {
     nameElement.appendChild(nameTextNode);
   }
-  if (eagle.palms != null) {
-	var classAttr = "fa fa-leaf";
-    var silverPalms = Math.floor(eagle.palms/3);
-    var rem = eagle.palms % 3;
-    for (var i = 0; i < silverPalms; i++){
+  if(eagle.borPalms != null && eagle.palms != null)  {
+    var borPalms = Math.floor(eagle.borPalms / 3);
+    var leftOver = eagle.borPalms % 3;
+    var afterPalms = Number.parseInt(eagle.palms) +  Number.parseInt(eagle.borPalms % 3);
+
+    var classAttr = "fa fa-envira";
+    for (var i = 0; i < borPalms; i++){
       addPalm(nameElement,"#c0c0c0", classAttr);
     }
-    if (rem == 1) {
-      addPalm(nameElement,"#665d1e", classAttr);
-    } else if (rem == 2){
-      addPalm(nameElement, "#ffd700", classAttr);
-    }
-  }
-  if (eagle.borPalms != null) {
-	var classAttr = "fa fa-envira";
-    var silverPalms = Math.floor(eagle.borPalms/3);
-    var rem = eagle.borPalms % 3;
+
+    var classAttr2 = "fa fa-leaf";
+    var silverPalms = Math.floor(afterPalms/3);
+    var rem = afterPalms % 3;
     for (var i = 0; i < silverPalms; i++){
-      addPalm(nameElement,"#c0c0c0", classAttr);
+      addPalm(nameElement,"#c0c0c0", classAttr2);
     }
     if (rem == 1) {
-      addPalm(nameElement,"#665d1e", classAttr);
+      addPalm(nameElement,"#665d1e", classAttr2);
     } else if (rem == 2){
-      addPalm(nameElement, "#ffd700", classAttr);
+      addPalm(nameElement, "#ffd700", classAttr2);
     }
   }
-  
+  else {
+    if (eagle.borPalms != null) {
+	    var classAttr = "fa fa-envira";
+      var silverPalms = Math.floor(eagle.borPalms/3);
+      var rem = eagle.borPalms % 3;
+      for (var i = 0; i < silverPalms; i++){
+        addPalm(nameElement,"#c0c0c0", classAttr);
+      }
+      if (rem == 1) {
+        addPalm(nameElement,"#665d1e", classAttr);
+      } else if (rem == 2){
+        addPalm(nameElement, "#ffd700", classAttr);
+      }
+    }
+    if (eagle.palms != null) {
+	    var classAttr = "fa fa-leaf";
+      var silverPalms = Math.floor(eagle.palms/3);
+      var rem = eagle.palms % 3;
+      for (var i = 0; i < silverPalms; i++){
+        addPalm(nameElement,"#c0c0c0", classAttr);
+      }
+      if (rem == 1) {
+        addPalm(nameElement,"#665d1e", classAttr);
+      } else if (rem == 2){
+        addPalm(nameElement, "#ffd700", classAttr);
+      }
+    }
+  }
   node.appendChild(nameElement);
 
   var dateElement = document.createElement("div");
