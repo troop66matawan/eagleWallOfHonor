@@ -163,6 +163,7 @@ var eagles = {
       "palms": "1"
     },
     { id : "159" , firstName : "Aiden", lastName : "Mulvey", date : "7/2020", borPalms: "2"},
-    { id : "160" , firstName : "Dean", lastName : "Chumash", date : "7/2020", borPalms: "3"}
+    { id : "160" , firstName : "Dean", lastName : "Chumash", date : "7/2020", borPalms: "3"},
+    { id : "161" , firstName : "Brendan", lastName : "Clark", date: "12/2020"}
   ]
 }
