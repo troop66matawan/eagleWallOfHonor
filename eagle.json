@@ -177,6 +177,7 @@ var eagles = {
     { id : "169" , firstName : "Theo", lastName: "Musilli", date: "6/2022", borPalms: "1"},
     { id : "170" , firstName : "Sean", lastName: "Palmer", date: "3/2023", borPalms: "2"},
     { id : "171" , firstName : "Andrew", lastName: "Meek", date: "11/2023", borPalms: "6"},
-    { id: "172" , firstName : "Alex", lastName: "Besculides", date: "11/2023", borPalms: "1"}
+    { id: "172" , firstName : "Alex", lastName: "Besculides", date: "11/2023", borPalms: "1"},
+    { id: "173", firstName: "Alex", lastName: "Tadrous", date: "12/2023", borPalms: "2"}
   ]
 }
