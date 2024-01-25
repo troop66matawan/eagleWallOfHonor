@@ -133,7 +133,7 @@ var eagles = {
     { id : "131" , firstName : "Thomas", lastName : "Pilato" , date : "7/2015" },
     { id : "132" , firstName : "Thomas", lastName : "Blaine" , date : "11/2015", url: "https://www.troop66matawan.com/our-scouts-achievements/eagle-wall-of-honor/thomas-blaine", youtube : "sZwHl3JkS5o" },
     { id : "133" , firstName : "Dylan", lastName : "Scillia" , date : "12/2015", url: "https://www.troop66matawan.com/our-scouts-achievements/eagle-wall-of-honor/dylan-scillia", youtube: "OekbkjfMoZU" },
-    { id : "134" , firstName : "Patrick", lastName : "Cucurullo" , date : "1/2016", url: "https://www.troop66matawan.com/our-scouts-achievements/eagle-wall-of-honor/patrick-cucurullo", youtube: "SzoRXLaIQ0w" },
+    { id : "134" , firstName : "Patrick", lastName : "Cucurullo" , date : "1/2016" },
     { id : "135" , firstName : "David", lastName : "Fleissner" , date : "1/2016", url :"https://www.troop66matawan.com/our-scouts-achievements/eagle-wall-of-honor/david-fleissner",  youtube: "clNsen1kx-4" },
     { id : "136" , firstName : "Stephen", lastName : "O'Keefe" , date : "3/2016", url :"https://www.troop66matawan.com/our-scouts-achievements/eagle-wall-of-honor/stephen-o-keefe",  youtube: "PtLk65AiZ_Q" },
     { id : "137" , firstName : "Ryan", lastName : "Goldstein" , date : "5/2016",url :"https://www.troop66matawan.com/our-scouts-achievements/eagle-wall-of-honor/ryan-goldstein", youtube: "Oft_xCPr6UI", palms : "3"},
