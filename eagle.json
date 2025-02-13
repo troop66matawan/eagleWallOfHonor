@@ -183,6 +183,7 @@ var eagles = {
     { id: "175", firstName: "Ryan", lastName: "Kee", date: "4/2024", borPalms: "2"},
     { id: "176", firstName: "Marcus", lastName: "Musilli", date: "5/2024", borPalms: "1"},
     { id: "177", firstName: "Sean", lastName: "Proce", date: "5/2024", borPalms: "1"},
-    { id: "178", firstName: "Damian", lastName: "Chiaravallo", date: "12/2024"}
+    { id: "178", firstName: "Damian", lastName: "Chiaravallo", date: "12/2024"},
+    { id: "179", firstName: "Simon", lastName: "Roche", date: "2/2025", borPalms: "2"}
   ]
 }
