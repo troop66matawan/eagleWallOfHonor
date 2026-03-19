@@ -187,6 +187,7 @@ var eagles = {
     { id: "179", firstName: "Simon", lastName: "Roche", date: "2/2025", borPalms: "2"},
     { id: "180", firstName: "Jaden", lastName: "Pierce", date: "4/2025"},
     { id: "181", firstName: "Lincoln", lastName: "Smith", date: "7/2025"},
-    { id: "182", firstName: "Kurt", lastName: "Bialkowski", date: "2/2026"}
+    { id: "182", firstName: "Kurt", lastName: "Bialkowski", date: "2/2026"},
+    { id: "183", firstName: "Rob", lastName: "Smith", date: "3/2026"}
   ]
 }
